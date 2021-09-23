@@ -1,0 +1,53 @@
+#include <msp430.h> 
+#define redLED BIT0
+#define greenLED BIT7
+
+void config_ACLK_to_32KHz_crystal()
+    {
+        PJSEL1 &= ~BIT4;
+        PJSEL0 |= BIT4;
+
+        CSCTL0 = CSKEY;
+        do
+        {
+            CSCTL5 &= ~LFXTOFFG;
+            SFRIFG1 &= ~OFIFG;
+        }while((CSCTL5 & LFXTOFFG) != 0);
+
+        CSCTL0_H = 0;
+        return;
+    }
+
+void main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
+    PM5CTL0 &= ~LOCKLPM5;
+
+    P1DIR |= redLED;
+    P9DIR |= greenLED;
+    P1OUT &= ~redLED;
+    P9OUT &= ~greenLED;
+
+    config_ACLK_to_32KHz_crystal();
+
+    //Configure Channel 0
+    TA0CCR0 = 32767;
+    TA0CCTL0 |= CCIE;
+        TA0CCTL0 &= ~CCIFG;
+
+    //Use ACLK, divide by 1, up mode, TAR cleared, enable interrupt for rollback-to-zero event
+    TA0CTL = TASSEL_1 | ID_0 | MC_1 | TACLR;
+
+    //enable the global interrupts
+    _enable_interrupts();
+
+    for(;;){}
+}
+
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void T0A0_ISR()
+{
+    //toggle both LEDs
+    P1OUT ^= redLED;
+    P9OUT ^= greenLED;
+}

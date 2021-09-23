@@ -1,0 +1,28 @@
+#include <msp430.h> 
+#define redLED BIT0
+#define greenLED BIT7
+#define BUT1 BIT1
+
+
+void main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5;
+
+	P1DIR |= redLED;
+	P9DIR |= greenLED;
+
+	P1OUT &= ~redLED;
+	P9OUT &= ~greenLED;
+	
+	P1DIR &= ~BUT1;
+	P1REN |= BUT1;
+	P1OUT |= BUT1;
+
+	for(;;)
+	{
+	    if ((P1IN & BUT1) != 1)// && BUT2 == 0)
+	        P1OUT |= redLED;
+	    else P1OUT &= ~redLED;
+	}
+}

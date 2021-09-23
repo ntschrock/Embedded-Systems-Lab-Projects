@@ -1,0 +1,137 @@
+// Code to print to the LCD pixel display on the Educational BoosterPack
+
+#include "msp430fr6989.h"
+#include "Grlib/grlib/grlib.h"          // Graphics library (grlib)
+#include "LcdDriver/lcd_driver.h"       // LCD driver
+#include <stdio.h>
+
+#define redLED BIT0
+#define greenLED BIT7
+#define button BIT1
+
+// Struct defined to display rectangles
+struct rect{
+  int xMin, xMax, yMin, yMax;
+};
+
+int swtch = 0;
+
+void main(void)
+{
+    volatile unsigned int counter=0;
+    char mystring[20];
+    unsigned int i;
+    extern tImage logo4BPP_UNCOMP;
+
+    WDTCTL = WDTPW | WDTHOLD;     // Stop the Watchdog timer
+    PM5CTL0 &= ~LOCKLPM5;         // Disable GPIO power-on default high-impedance mode
+
+
+    P1DIR |= redLED;    P1OUT &= ~redLED;
+    P9DIR |= greenLED;  P9OUT |= greenLED;
+    P1DIR &= ~button; P1REN|=button; P1OUT|=button; P1IE|=button; P1IES|=button; P1IFG &= ~button;// button, resistor, pullup
+
+    // Configure SMCLK to 8 MHz (used as SPI clock)
+    CSCTL0 = CSKEY;                 // Unlock CS registers
+    CSCTL3 &= ~(BIT4|BIT5|BIT6);    // DIVS=0
+    CSCTL0_H = 0;                   // Relock the CS registers
+
+    // Increase the brightness in the LCD
+    P2DIR |= BIT6;
+    P2OUT |= BIT6;
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    Graphics_Context g_sContext;        // Declare a graphic library context
+    Crystalfontz128x128_Init();         // Initialize the display
+
+    // Set the screen orientation
+    Crystalfontz128x128_SetOrientation(0);
+
+    // Initialize the context
+    Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
+
+    // Set the default font for strings
+    GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
+
+    // Set background and foreground colors
+    Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+
+    // Clear the screen
+    Graphics_clearDisplay(&g_sContext);
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    _enable_interrupts();
+
+    while(1){
+        if(swtch % 2 == 0)
+        {
+            Graphics_drawImage(&g_sContext, &logo4BPP_UNCOMP,0,0);
+        }
+        else
+        {
+            Graphics_Rectangle colorB1 = {0,0,128,128};
+            Graphics_drawRectangle(&g_sContext, &colorB1);
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+            Graphics_fillRectangle(&g_sContext, &colorB1);
+
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+            Graphics_drawStringCentered(&g_sContext, "Lab 11 pt 2", AUTO_STRING_LENGTH, 64, 20, OPAQUE_TEXT);
+
+            sprintf(mystring, "I'm depressed");
+            Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 35, OPAQUE_TEXT);
+
+            //horizontal line
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
+            Graphics_drawLine(&g_sContext, 120, 68, 10, 68);
+
+            // Drawing three circles
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
+            Graphics_fillCircle(&g_sContext, 70, 90, 5);
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+            Graphics_fillCircle(&g_sContext, 85, 100, 5);
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
+            Graphics_drawCircle(&g_sContext, 100, 110, 5);
+
+            // Drawing 2 rectangles
+            struct rect r1;
+            r1.xMin = 50;
+            r1.xMax = 100;
+            r1.yMin = 10;
+            r1.yMax = 105;
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_SALMON);
+            Graphics_drawRectangle(&g_sContext, &r1);
+            // Drawing a filled rectangle
+            struct rect r2;
+            r2.xMin = 50;
+            r2.xMax = 110;
+            r2.yMin = 10;
+            r2.yMax = 115;
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_YELLOW);
+            Graphics_fillRectangle(&g_sContext, &r2);
+
+            //clock
+            Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+            Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+            for(i = 0; i < 1000; i++)
+            {
+                sprintf(mystring, "%d", i);
+                Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 55, OPAQUE_TEXT);
+
+                if(i > 256)
+                {
+                    i = 0;
+                }
+
+                if((button & P1IN) ==0)
+                    break;
+            }
+        }
+    }
+}
+    #pragma vector = PORT1_VECTOR
+    __interrupt void Port1_ISR() {
+        swtch ++;
+        P1OUT ^= redLED;
+        P9OUT ^= greenLED;
+        P1IFG &= ~button;
+    }
+

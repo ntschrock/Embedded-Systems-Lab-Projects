@@ -1,0 +1,479 @@
+-------------------------------------------------------------------------------------
+5.1 a
+
+#include <msp430fr6989.h>
+#define redLED BIT0
+#define greenLED BIT7
+void Initialize_LCD();
+
+//finish this
+const unsigned char LCD_Num[10] = {0xFC, 0x60, 0xDB,  0xF3, 0x67, 0xB7, 0xBF, 0xE4, 0xFF, 0xF7};
+
+int main(void)
+{
+    volatile unsigned int n;
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5;
+
+	P1DIR |= redLED;
+	P9DIR |= greenLED;
+	P1OUT |= redLED;
+	P9OUT &= ~greenLED;
+
+	Initialize_LCD();
+
+	//LCDCMEMCTL = LCDCLRM;     clears all segments
+
+	LCDM19 = LCD_Num[4];
+	LCDM15 = LCD_Num[3];
+	LCDM8 = LCD_Num[0];
+
+	for(;;)
+	{
+	    for(n=0; n<=50000; n++) {}
+	    P1OUT ^= redLED;
+	    P9OUT ^= greenLED;
+	}
+	
+	return 0;
+}
+
+void Initialize_LCD()
+{
+    PJSEL0 = BIT4 | BIT5;
+
+    LCDCPCTL0 = 0xFFFF;
+    LCDCPCTL1 = 0xFC3F;
+    LCDCPCTL2 = 0x0FFF;
+
+    CSCTL0_H = CSKEY >> 8;
+    CSCTL4 &= ~LFXTOFF;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while(SFRIFG1 & OFIFG);
+    CSCTL0_H = 0;
+
+    LCDCCTL0 = LCDDIV__1 | LCDPRE__16 | LCD4MUX | LCDLP;
+
+    LCDCVCTL = VLCD_1 | VLCDREF_0 | LCDCPEN;
+
+    LCDCCPCTL = LCDCPCLKSYNC; // Clock synchronization enabled
+
+    LCDCMEMCTL = LCDCLRM; // Clear LCD memory
+
+    LCDCCTL0 |= LCDON;
+    return;
+}
+------------------------------------------------------------------------------------
+5.1 b
+
+#include <msp430fr6989.h>
+#define redLED BIT0
+#define greenLED BIT7
+void Initialize_LCD();
+
+//finish this
+const unsigned char LCD_Num[10] = {0xFC, 0x60, 0xDB,  0xF3, 0x67, 0xB7, 0xBF, 0xE4, 0xFF, 0xF7};
+
+void display_num_lcd(unsigned int n);
+
+int main(void)
+{
+    volatile unsigned int n, x = 65535;
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5;
+
+	P1DIR |= redLED;
+	P9DIR |= greenLED;
+	P1OUT |= redLED;
+	P9OUT &= ~greenLED;
+
+	Initialize_LCD();
+
+	LCDCMEMCTL = LCDCLRM;     //clears all segments
+
+	display_num_lcd(n); //prints a random number based on the constantly changing value of n
+	//used x as a test value
+
+	for(;;)
+	{
+	    for(n=0; n<=50000; n++) {}
+	    P1OUT ^= redLED;
+	    P9OUT ^= greenLED;
+	}
+}
+
+void Initialize_LCD()
+{
+    PJSEL0 = BIT4 | BIT5;
+
+    LCDCPCTL0 = 0xFFFF;
+    LCDCPCTL1 = 0xFC3F;
+    LCDCPCTL2 = 0x0FFF;
+
+    CSCTL0_H = CSKEY >> 8;
+    CSCTL4 &= ~LFXTOFF;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while(SFRIFG1 & OFIFG);
+    CSCTL0_H = 0;
+
+    LCDCCTL0 = LCDDIV__1 | LCDPRE__16 | LCD4MUX | LCDLP;
+
+    LCDCVCTL = VLCD_1 | VLCDREF_0 | LCDCPEN;
+
+    LCDCCPCTL = LCDCPCLKSYNC; // Clock synchronization enabled
+
+    LCDCMEMCTL = LCDCLRM; // Clear LCD memory
+
+    LCDCCTL0 |= LCDON;
+    return;
+}
+
+void display_num_lcd(unsigned int n)
+{
+    LCDM6 = LCD_Num[(n/10000) % 10]; //first number
+    LCDM4 = LCD_Num[(n/1000) % 10]; //second number
+    LCDM19 = LCD_Num[(n/100) % 10]; //third number
+    LCDM15 = LCD_Num[(n/10) % 10]; //fourth number
+    LCDM8 = LCD_Num[n % 10]; //5th number
+
+    //gets rid of the 0's in front of the number 
+    if((LCDM6 == 0xFC) && (LCDM4 == 0xFC) && (LCDM19 == 0xFC) && (LCDM15 == 0xFC) && (LCDM8 == 0xFC))
+    {
+        LCDM6 = 0;
+        LCDM4 = 0;
+        LCDM19 = 0;
+        LCDM15 = 0;
+    }
+    if(LCDM6 == 0xFC)
+    {
+        LCDM6 = 0;
+        if(LCDM4 == 0xFC)
+        {
+            LCDM4 = 0;
+            if(LCDM19 == 0xFC)
+            {
+                LCDM19 = 0;
+                if(LCDM15 == 0xFC)
+                {
+                    LCDM15 = 0;
+                    if(LCDM8 == 0xFC)
+                    {
+                        LCDM8 = 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+--------------------------------------------------------------------------------
+5.2
+
+#include <msp430fr6989.h>
+#define redLED BIT0
+#define greenLED BIT7
+void Initialize_LCD();
+
+//finish this
+const unsigned char LCD_Num[10] = {0xFC, 0x60, 0xDB,  0xF3, 0x67, 0xB7, 0xBF, 0xE4, 0xFF, 0xF7};
+
+void display_num_lcd(unsigned int n);
+
+int main(void)
+{
+    volatile unsigned int n, x = 0;
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5;
+
+	P1DIR |= redLED;
+	P9DIR |= greenLED;
+	P1OUT |= redLED;
+	P9OUT &= ~greenLED;
+
+	config_ACLK_to_32KHz_crystal();
+	TA0CCR0 = 32767;
+	TA0CTL = TASSEL_1 | MC_1 | TACLR | ID_0;
+	TA0CTL &= ~TAIFG;
+
+	Initialize_LCD();
+
+	LCDCMEMCTL = LCDCLRM;     //clears all segments
+
+	for(;;)
+	{
+	    while((TA0CTL & TAIFG) == 0){}
+	    if(x <= 65535)
+	    {
+	        display_num_lcd(x);
+	        x++;
+	        P1OUT ^= redLED;     //toggle the red LED
+	        P9OUT ^= greenLED;
+	        TA0CTL &= ~TAIFG;   //clear the flag
+	    }
+	    else
+	    {
+	        x = 0;
+		TA0CTL &= ~TAIFG;
+	    }
+	}
+
+}
+
+void Initialize_LCD()
+{
+    PJSEL0 = BIT4 | BIT5;
+
+    LCDCPCTL0 = 0xFFFF;
+    LCDCPCTL1 = 0xFC3F;
+    LCDCPCTL2 = 0x0FFF;
+
+    CSCTL0_H = CSKEY >> 8;
+    CSCTL4 &= ~LFXTOFF;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while(SFRIFG1 & OFIFG);
+    CSCTL0_H = 0;
+
+    LCDCCTL0 = LCDDIV__1 | LCDPRE__16 | LCD4MUX | LCDLP;
+
+    LCDCVCTL = VLCD_1 | VLCDREF_0 | LCDCPEN;
+
+    LCDCCPCTL = LCDCPCLKSYNC; // Clock synchronization enabled
+
+    LCDCMEMCTL = LCDCLRM; // Clear LCD memory
+
+    LCDCCTL0 |= LCDON;
+    return;
+}
+
+void display_num_lcd(unsigned int n)
+{
+    LCDM6 = LCD_Num[(n/10000) % 10]; //first number
+    LCDM4 = LCD_Num[(n/1000) % 10]; //second number
+    LCDM19 = LCD_Num[(n/100) % 10]; //third number
+    LCDM15 = LCD_Num[(n/10) % 10]; //fourth number
+    LCDM8 = LCD_Num[n % 10]; //5th number
+
+    //gets rid of the 0's in front of the number
+    if((LCDM6 == 0xFC) && (LCDM4 == 0xFC) && (LCDM19 == 0xFC) && (LCDM15 == 0xFC) && (LCDM8 == 0xFC))
+    {
+        LCDM6 = 0;
+        LCDM4 = 0;
+        LCDM19 = 0;
+        LCDM15 = 0;
+    }
+    if(LCDM6 == 0xFC)
+    {
+        LCDM6 = 0;
+        if(LCDM4 == 0xFC)
+        {
+            LCDM4 = 0;
+            if(LCDM19 == 0xFC)
+            {
+                LCDM19 = 0;
+                if(LCDM15 == 0xFC)
+                {
+                    LCDM15 = 0;
+                    if(LCDM8 == 0xFC)
+                    {
+                        LCDM8 = 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void config_ACLK_to_32KHz_crystal()
+{
+    PJSEL1 &= ~BIT4;
+    PJSEL0 |= BIT4;
+
+    CSCTL0 = CSKEY;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while((CSCTL5 & LFXTOFFG) != 0);
+
+    CSCTL0_H = 0;
+    return;
+}
+
+-----------------------------------------------------------------------
+5.3
+
+#include <msp430fr6989.h>
+#define redLED BIT0
+#define greenLED BIT7
+#define BUT1 BIT1
+#define BUT2 BIT2
+void Initialize_LCD();
+
+//finish this
+const unsigned char LCD_Num[10] = {0xFC, 0x60, 0xDB,  0xF3, 0x67, 0xB7, 0xBF, 0xE4, 0xFF, 0xF7};
+
+void display_num_lcd(unsigned int n);
+
+unsigned int x;
+
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	PM5CTL0 &= ~LOCKLPM5;
+
+	P1DIR |= redLED;
+	P9DIR |= greenLED;
+	P1OUT &= ~redLED;
+	P9OUT |= greenLED;
+
+    //configure buttons with interrupts
+    P1DIR &= ~(BUT1 | BUT2);
+    P1REN |= (BUT1 | BUT2);
+    P1OUT |= (BUT1 | BUT2);
+    P1IE |= (BUT1 | BUT2);
+    P1IES |= (BUT1 | BUT2);
+    P1IFG &= ~(BUT1 | BUT2);
+
+    _enable_interrupts();
+
+    //set up for the clock
+	config_ACLK_to_32KHz_crystal();
+	TA0CCR0 = 32767;
+	TA0CTL = TASSEL_1 | MC_1 | TACLR | ID_0;
+	TA0CTL &= ~TAIFG;
+
+	Initialize_LCD();
+
+	LCDCMEMCTL = LCDCLRM;     //clears all segments
+
+	for(;;)
+	{
+	    while((TA0CTL & TAIFG) == 0){}
+	    if(x<=65535)
+	    {
+	        display_num_lcd(x);
+	        x++;
+	        TA0CTL &= ~TAIFG;
+	    }
+	    else
+	        {
+	            x = 0;
+	            TA0CTL &= ~TAIFG;   //clear the flag
+	        }
+	}
+}
+
+#pragma vector = PORT1_VECTOR
+__interrupt void Port1_ISR()
+{
+    if((P1IFG & BUT1) == BUT1)
+    {
+        TA0CTL ^= (MC_1); //pause the timer
+        P1OUT ^= redLED;
+        P9OUT ^= greenLED;
+        P1IFG &= ~BUT1;
+    }
+    if((P1IFG & BUT2) == BUT2)
+    {
+        x = 0;
+        display_num_lcd(x);
+        TA0CTL &= ~TAIFG;
+        P1IFG &= ~BUT2;
+    }
+}
+
+
+void Initialize_LCD()
+{
+    PJSEL0 = BIT4 | BIT5;
+
+    LCDCPCTL0 = 0xFFFF;
+    LCDCPCTL1 = 0xFC3F;
+    LCDCPCTL2 = 0x0FFF;
+
+    CSCTL0_H = CSKEY >> 8;
+    CSCTL4 &= ~LFXTOFF;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while(SFRIFG1 & OFIFG);
+    CSCTL0_H = 0;
+
+    LCDCCTL0 = LCDDIV__1 | LCDPRE__16 | LCD4MUX | LCDLP;
+
+    LCDCVCTL = VLCD_1 | VLCDREF_0 | LCDCPEN;
+
+    LCDCCPCTL = LCDCPCLKSYNC; // Clock synchronization enabled
+
+    LCDCMEMCTL = LCDCLRM; // Clear LCD memory
+
+    LCDCCTL0 |= LCDON;
+    return;
+}
+
+void display_num_lcd(unsigned int n)
+{
+    LCDM6 = LCD_Num[(n/10000) % 10]; //first number
+    LCDM4 = LCD_Num[(n/1000) % 10]; //second number
+    LCDM19 = LCD_Num[(n/100) % 10]; //third number
+    LCDM15 = LCD_Num[(n/10) % 10]; //fourth number
+    LCDM8 = LCD_Num[n % 10]; //5th number
+
+    //gets rid of the 0's in front of the number
+    if((LCDM6 == 0xFC) && (LCDM4 == 0xFC) && (LCDM19 == 0xFC) && (LCDM15 == 0xFC) && (LCDM8 == 0xFC))
+    {
+        LCDM6 = 0;
+        LCDM4 = 0;
+        LCDM19 = 0;
+        LCDM15 = 0;
+    }
+    if(LCDM6 == 0xFC)
+    {
+        LCDM6 = 0;
+        if(LCDM4 == 0xFC)
+        {
+            LCDM4 = 0;
+            if(LCDM19 == 0xFC)
+            {
+                LCDM19 = 0;
+                if(LCDM15 == 0xFC)
+                {
+                    LCDM15 = 0;
+                    if(LCDM8 == 0xFC)
+                    {
+                        LCDM8 = 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void config_ACLK_to_32KHz_crystal()
+{
+    PJSEL1 &= ~BIT4;
+    PJSEL0 |= BIT4;
+
+    CSCTL0 = CSKEY;
+    do
+    {
+        CSCTL5 &= ~LFXTOFFG;
+        SFRIFG1 &= ~OFIFG;
+    }while((CSCTL5 & LFXTOFFG) != 0);
+
+    CSCTL0_H = 0;
+    return;
+}
+
+
+

@@ -1,0 +1,63 @@
+
+**** Build of configuration Debug for project Lab09 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab09/Lab09" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 421: warning #112-D: statement is unreachable
+"../main.c", line 401: warning #179-D: variable "data" was declared but never referenced
+"../main.c", line 402: warning #179-D: variable "j" was declared but never referenced
+"../main.c", line 403: warning #179-D: variable "deviceID" was declared but never referenced
+"../main.c", line 413: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 413: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 419: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 419: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 402: remark #1535-D: (ULP 8.1) variable "j" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 428: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "char *"
+"../main.c", line 428: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 428: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "char *"
+"../main.c", line 428: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 428: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "char *"
+"../main.c", line 428: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 428: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "char *"
+"../main.c", line 428: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 428: warning #145-D: a value of type "int" cannot be used to initialize an entity of type "char *"
+"../main.c", line 428: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 438: warning #515-D: a value of type "char" cannot be assigned to an entity of type "char *"
+"../main.c", line 445: warning #169-D: argument of type "char *" is incompatible with parameter of type "unsigned char"
+"../main.c", line 437: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 438: remark #2553-D: (ULP 14.1) Array index (involving "j") of type "int". Recommend using "unsigned int"
+"../main.c", line 439: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 445: remark #2553-D: (ULP 14.1) Array index (involving "k") of type "int". Recommend using "unsigned int"
+"../main.c", line 438: remark #2553-D: (ULP 14.1) Array index (involving "j") of type "int". Recommend using "unsigned int"
+"../main.c", line 463: remark #1528-D: (ULP 3.1) Detected flag polling using UCA1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 510: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 522: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 528: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 513: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 525: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 531: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 549: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 555: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 558: remark #1528-D: (ULP 3.1) Detected flag polling using UCB1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 552: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 561: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 415 (col. 18): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "Lab09.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab09.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab09_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab09.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab09.out"
+ 
+
+**** Build Finished ****

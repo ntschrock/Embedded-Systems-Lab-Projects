@@ -1,0 +1,52 @@
+
+**** Build of configuration Debug for project Z-FR6989-LABS-LCD-Pixel ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/lab11 download/CCS-Project-LCD-Pixel" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 104: warning #169-D: argument of type "struct rect *" is incompatible with parameter of type "const Graphics_Rectangle *"
+"../main.c", line 112: warning #169-D: argument of type "struct rect *" is incompatible with parameter of type "const Graphics_Rectangle *"
+"../main.c", line 126: warning #169-D: argument of type "char *" is incompatible with parameter of type "int8_t *"
+"../main.c", line 65: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 100: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 101: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 102: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 108: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 109: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 110: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 118: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 121: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 123: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 125: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 100: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 101: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 102: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 108: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 109: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 110: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 118: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 100: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 101: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 102: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 108: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 109: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 110: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 118: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+Finished building: "../main.c"
+ 
+Building target: "Z-FR6989-LABS-LCD-Pixel.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Z-FR6989-LABS-LCD-Pixel.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Z-FR6989-LABS-LCD-Pixel_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Z-FR6989-LABS-LCD-Pixel.out" "./logo.obj" "./main.obj" "./GrLib/fonts/fontcm12.obj" "./GrLib/fonts/fontcm12b.obj" "./GrLib/fonts/fontcm16.obj" "./GrLib/fonts/fontcmss12.obj" "./GrLib/fonts/fontcmtt12.obj" "./GrLib/fonts/fontfixed6x8.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./LcdDriver/lcd_driver.obj" "./LcdDriver/middle_driver.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Z-FR6989-LABS-LCD-Pixel.out"
+ 
+
+**** Build Finished ****

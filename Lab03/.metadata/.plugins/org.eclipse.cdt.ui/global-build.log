@@ -1,0 +1,839 @@
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 10: error #20: identifier "CSCTLO" is undefined
+"../main.c", line 15: error #20: identifier "LFCTOFFG" is undefined
+"../main.c", line 24: error #20: identifier "PM5CTLO" is undefined
+"../main.c", line 40: error #29: expected an expression
+"../main.c", line 40: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 10: error #20: identifier "CSCTLO" is undefined
+"../main.c", line 15: error #20: identifier "LFCTOFFG" is undefined
+"../main.c", line 24: error #20: identifier "PM5CTLO" is undefined
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 10: error #20: identifier "CSCTLO" is undefined
+"../main.c", line 15: error #20: identifier "LFCTOFFG" is undefined
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 15: error #20: identifier "LFCTOFFG" is undefined
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 15: error #20: identifier "LFCT0FFG" is undefined
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 41: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 40: error #20: identifier "ACLK" is undefined
+"../main.c", line 40: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+gmake[1]: 'Lab03.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 28: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 40: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 71: warning #100-D: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 71: warning #233-D: declaration is not visible outside of function
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 53: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 55: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 56: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 57: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 58: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 59: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 60: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 62: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 63: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 65: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 67: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 69: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 79: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 80: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 81: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 83: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 84: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 85: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 86: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 88: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 89: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 91: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 110: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 111: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 112: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 113: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 114: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 115: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 116: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include/intrinsics.h", line 117: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 156: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 156: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 157: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 157: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 158: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 158: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 159: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 159: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 160: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 160: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 161: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 161: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 162: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 162: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 163: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 163: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 164: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 164: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 165: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 165: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 166: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 166: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 167: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 167: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 168: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 168: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 169: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 169: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 170: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 170: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 171: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 171: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 172: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 172: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 173: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 173: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 174: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 174: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 175: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 175: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 176: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 176: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 177: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 177: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 178: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 178: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 179: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 179: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 180: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 180: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 181: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 181: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 182: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 182: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 183: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 183: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 184: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 184: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 185: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 185: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 186: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 186: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 187: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 187: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 188: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 188: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 189: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 189: error #100: a declaration here must declare a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 190: error #86: invalid storage class for a parameter
+"D:/ti/ccs1010/ccs/ccs_base/msp430/include/msp430fr6989.h", line 190: error #100: a declaration here must declare a parameter
+Error limit reached.
+100 errors detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 41: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+gmake[1]: 'Lab03.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 35: error #20: identifier "TA0CCRO" is undefined
+"../main.c", line 37: error #20: identifier "ACLK" is undefined
+"../main.c", line 37: error #20: identifier "UP" is undefined
+"../main.c", line 45: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 37: error #20: identifier "ACLK" is undefined
+"../main.c", line 37: error #20: identifier "UP" is undefined
+"../main.c", line 45: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 38: error #20: identifier "ACLK" is undefined
+"../main.c", line 38: error #20: identifier "BIT10" is undefined
+"../main.c", line 46: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 39: error #20: identifier "BIT100" is undefined
+"../main.c", line 39: error #20: identifier "BIT10" is undefined
+"../main.c", line 47: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+gmake[1]: 'Lab03.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 44: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 45: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "PEOUT_L" within a loop. Recommend using lower 4 bits to allow use of constant generators
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 45: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "PEOUT_L" within a loop. Recommend using lower 4 bits to allow use of constant generators
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab03 ****
+
+"D:\\ti\\ccs1010\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="D:/ti/ccs1010/ccs/ccs_base/msp430/include" --include_path="C:/Users/Noah/Desktop/Embedded Systems/Lab03/Lab03" --include_path="D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 43: remark #1528-D: (ULP 3.1) Detected flag polling using TAIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 45: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "PEOUT_L" within a loop. Recommend using lower 4 bits to allow use of constant generators
+Finished building: "../main.c"
+ 
+Building target: "Lab03.out"
+Invoking: MSP430 Linker
+"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"Lab03.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"D:/ti/ccs1010/ccs/ccs_base/msp430/include" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/ti/ccs1010/ccs/ccs_base/msp430/lib/FR59xx" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ti/ccs1010/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Lab03_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Lab03.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Lab03.out"
+ 
+
+**** Build Finished ****

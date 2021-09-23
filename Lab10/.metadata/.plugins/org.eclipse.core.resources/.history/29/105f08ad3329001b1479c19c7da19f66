@@ -1,0 +1,364 @@
+/*#include <msp430.h>
+#define redLED BIT0
+#define greenLED BIT7
+#define FLAGS UCA1IFG
+#define RXFLAG UCRXIFG
+#define TXFLAG UCTXIFG
+#define TXBUFFER UCA1TXBUF
+#define RXBUFFER UCA1RXBUF
+
+void Initialize_ADC(void);
+void Initialize_UART(void);
+void uart_write_uint16(unsigned int);
+void uart_write_char(unsigned char);
+void uart_newline(void);
+
+void main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;
+    PM5CTL0 &= ~LOCKLPM5;
+
+    P1DIR |= redLED;
+    P1OUT &= ~redLED;
+
+    Initialize_UART();
+    Initialize_ADC();
+
+    for(;;)
+    {
+        ADC12CTL0|=ADC12SC;
+        while ((ADC12CTL1 &ADC12BUSY)!=0);
+        uart_write_uint16(ADC12MEM0);
+        uart_write_char('\n');
+        uart_write_char('\r');
+        P1OUT^=redLED;
+    }
+}
+
+void Initialize_ADC(void)
+{
+    P9SEL1 |= BIT2;
+    P9SEL0 |= BIT2;
+
+    ADC12CTL0 |= ADC12ON;
+    ADC12CTL0 &= ~ADC12ENC;
+    ADC12CTL0|=ADC12ON|ADC12SHT1_10;
+    ADC12CTL1= ADC12SHS_0|ADC12SHP|ADC12DIV_7|ADC12SSEL_0;
+    ADC12CTL2|= ADC12ENC;
+    ADC12MCTL0|= ADC12INCH_10|ADC12VRSEL_0;
+    ADC12CTL0 |= ADC12ENC;
+
+    return;
+}
+
+void Initialize_UART(void)
+{
+    P3SEL1 &= ~(BIT4|BIT5);
+    P3SEL0 |= (BIT4|BIT5);
+
+    UCA1CTLW0 |= UCSSEL_2;
+
+    UCA1BRW = 6;
+    UCA1MCTLW = UCBRS5|UCBRF3|UCOS16;
+    UCA1CTLW0 &= ~UCSWRST;
+}
+
+void uart_write_uint16(unsigned int n)
+{
+    int x;
+    if(n >= 10000)
+    {
+        x = (n/10000) % 10;
+        uart_write_char('0'+ x);
+    }
+
+    if(n >= 1000)
+    {
+        x = (n/1000) % 10;
+        uart_write_char('0' + x);
+    }
+
+    if(n >= 100)
+    {
+        x = (n/100) % 10;
+        uart_write_char('0' + x);
+    }
+
+    if(n >= 10)
+    {
+        x = (n/10) % 10;
+        uart_write_char('0' + x);
+    }
+
+    x = (n % 10);
+    uart_write_char('0' + x);
+    return;
+}
+
+void uart_write_char(unsigned char ch)
+{
+    while ((FLAGS & TXFLAG)==0) {}
+    TXBUFFER = ch;
+}
+
+unsigned char uart_read_char(void)
+{
+    unsigned char temp;
+    if( (FLAGS & RXFLAG) == 0)
+        return 0;
+    else
+        temp = RXBUFFER;
+    return temp;
+}
+*/
+/*
+#include <msp430.h>
+#define redLED BIT0
+#define greenLED BIT7
+#define FLAGS UCA1IFG
+#define RXFLAG UCRXIFG
+#define TXFLAG UCTXIFG
+#define TXBUFFER UCA1TXBUF
+#define RXBUFFER UCA1RXBUF
+
+void Initialize_ADC(void);
+void Initialize_UART(void);
+void uart_write_uint16(unsigned int);
+void uart_write_char(unsigned char);
+void uart_newline(void);
+
+void main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;
+    PM5CTL0 &= ~LOCKLPM5;
+
+    P1DIR |= redLED;
+    P1OUT &= ~redLED;
+
+    Initialize_UART();
+    Initialize_ADC();
+
+    for(;;)
+    {
+        ADC12CTL0|=ADC12SC;
+        while ((ADC12CTL1 &ADC12BUSY)!=0);
+        uart_write_uint16(ADC12MEM0);
+        uart_write_char('\n');
+        uart_write_char('\r');
+        P1OUT^=redLED;
+    }
+}
+
+void Initialize_ADC(void)
+{
+    P9SEL1 |= BIT2;
+    P9SEL0 |= BIT2;
+
+    P8SEL1 |= BIT7;
+    P8SEL0 |= BIT7;
+
+    ADC12CTL0 |= ADC12ON;
+    ADC12CTL0 &= ~ADC12ENC;
+
+    ADC12CTL0|=ADC12ON|ADC12SHT1_10;
+
+    ADC12CTL1= ADC12SHS_0|ADC12SHP|ADC12DIV_7|ADC12SSEL_0;
+    ADC12CTL1|=ADC12CONSEQ_1;
+
+    ADC12CTL2|= ADC12ENC;
+
+    ADC12MCTL0|= ADC12INCH_10|ADC12VRSEL_0;
+    ADC12MCTL1|=ADC12INCH_4|ADC12VRSEL_0|ADC12EOS;
+
+    ADC12CTL0 |= ADC12ENC;
+    return;
+}
+
+void Initialize_UART(void)
+{
+    P3SEL1 &= ~(BIT4|BIT5);
+    P3SEL0 |= (BIT4|BIT5);
+
+    UCA1CTLW0 |= UCSSEL_2;
+
+    UCA1BRW = 6;
+    UCA1MCTLW = UCBRS5|UCBRF3|UCOS16;
+    UCA1CTLW0 &= ~UCSWRST;
+}
+
+void uart_write_uint16(unsigned int n)
+{
+    int x;
+    if(n >= 10000)
+    {
+        x = (n/10000) % 10;
+        uart_write_char('0'+ x);
+    }
+
+    if(n >= 1000)
+    {
+        x = (n/1000) % 10;
+        uart_write_char('0' + x);
+    }
+
+    if(n >= 100)
+    {
+        x = (n/100) % 10;
+        uart_write_char('0' + x);
+    }
+
+    if(n >= 10)
+    {
+        x = (n/10) % 10;
+        uart_write_char('0' + x);
+    }
+
+    x = (n % 10);
+    uart_write_char('0' + x);
+    return;
+}
+
+void uart_write_char(unsigned char ch)
+{
+    while ((FLAGS & TXFLAG)==0) {}
+    TXBUFFER = ch;
+}
+
+unsigned char uart_read_char(void)
+{
+    unsigned char temp;
+    if( (FLAGS & RXFLAG) == 0)
+        return 0;
+    else
+        temp = RXBUFFER;
+    return temp;
+}*/
+
+#include <msp430.h>
+// Functions
+void Initialize_ADC(void);
+void Initialize_UART(void);
+void uart_write_uint16(unsigned int);
+void uart_write_char(unsigned char);
+
+
+// Definitions
+#define redLED BIT0 //RED LIGHT
+#define FLAGS UCA1IFG // Contains the transmit & receive flags
+#define RXFLAG UCRXIFG // Receive flag
+#define TXFLAG UCTXIFG // Transmit flag
+#define TXBUFFER UCA1TXBUF // Transmit buffer
+#define RXBUFFER UCA1RXBUF // Receive buffer
+
+void main(void) {
+WDTCTL = WDTPW | WDTHOLD; // Stop the Watchdog timer
+PM5CTL0 &= ~LOCKLPM5; // Enable the GPIO pins
+// Configure the redLED
+P1DIR |= redLED;
+P1OUT &= ~redLED;
+
+Initialize_UART();
+Initialize_ADC();
+
+for(;;) {
+ADC12CTL0|=ADC12SC;
+while ((ADC12CTL1 &ADC12BUSY)!=0); // ADC12MEM0 to the terminal
+uart_write_uint16(ADC12MEM0); //create a new line
+        uart_write_char('\n');
+        uart_write_char('\r');
+ P1OUT^=redLED;
+}
+}
+void Initialize_ADC(void) {
+// Divert the pins to analog functionality
+// X-axis: A10/P9.2, for A10 (P9DIR=x, P9SEL1=1, P9SEL0=1)
+P9SEL1 |= BIT2;
+P9SEL0 |= BIT2;
+// Y-axis: A4/P8.7, for A4 (P9DIR=x, P9SEL1=1, P9SEL0=1)
+P8SEL1 |= BIT7;
+P8SEL0 |= BIT7;
+// Turn on the ADC module
+ADC12CTL0 |= ADC12ON;
+// Turn off ENC (Enable Conversion) bit while modifying the
+// configuration
+ADC12CTL0 &= ~ADC12ENC;
+
+//*************** ADC12CTL0 ***************
+// Set ADC12SHT0 (select the number of cycles that you determined)
+ADC12CTL0|=ADC12ON|ADC12SHT1_10;
+//*************** ADC12CTL1 ***************
+// Set ADC12SHS (select ADC12SC bit as the trigger)
+// Set ADC12SHP bit
+// Set ADC12DIV (select the divider you determined)
+// Set ADC12SSEL (select MODOSC)
+ADC12CTL1= ADC12SHS_0|ADC12SHP|ADC12DIV_7|ADC12SSEL_0;
+ADC12CTL1|=ADC12CONSEQ_1;
+//*************** ADC12CTL2 ***************
+// Set ADC12RES (select 12-bit resolution)
+// Set ADC12DF (select unsigned binary format)
+ADC12CTL2|= ADC12ENC;
+//*************** ADC12CTL3 ***************
+// Leave all fields at default values
+//*************** ADC12MCTL0 ***************
+// Set ADC12VRSEL (select VR+=AVCC, VR-=AVSS)
+// Set ADC12INCH (select channel A10)
+ADC12MCTL0|= ADC12INCH_10|ADC12VRSEL_0;
+ADC12MCTL1|=ADC12INCH_4|ADC12VRSEL_0|ADC12EOS;
+// Turn on ENC (Enable Conversion) bit at the end of the configuration
+ADC12CTL0 |= ADC12ENC;
+return;
+}
+
+void Initialize_UART(void){
+//Divert pins to UART functionality
+P3SEL1 &= ~(BIT4|BIT5);
+P3SEL0 |= (BIT4|BIT5);
+//Use SMCLK clock
+UCA1CTLW0 |= UCSSEL_2;
+//Clock dividers and modulators
+// UCBR=6, UCBRF=8, UCBRS=0x20, UCOS16=1 (oversampling)
+UCA1BRW = 6;
+UCA1MCTLW = UCBRS5|UCBRF3|UCOS16;
+//Exit reset state (so transmission/reception can begin)
+UCA1CTLW0 &= ~UCSWRST;
+}
+void uart_write_uint16(unsigned int n){
+int x;
+if(n >= 10000) {
+x = (n/10000) % 10;
+uart_write_char('0'+ x);
+}
+
+if(n >= 1000) {
+        x = (n/1000) % 10;
+   uart_write_char('0' + x);
+}
+
+if(n >= 100) {
+x = (n/100) % 10;
+uart_write_char('0' + x);
+}
+
+if(n >= 10) {
+x = (n/10) % 10;
+uart_write_char('0' + x);
+}
+
+x = (n % 10);
+uart_write_char('0' + x);
+return;
+}
+
+void uart_write_char(unsigned char ch) {
+while ((FLAGS & TXFLAG)==0) {}
+     TXBUFFER = ch;
+}
+unsigned char uart_read_char(void) {
+unsigned char temp;
+if( (FLAGS & RXFLAG) == 0)
+return 0;
+else
+        temp = RXBUFFER;
+return temp;
+}
+
